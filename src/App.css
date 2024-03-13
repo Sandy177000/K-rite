@@ -1,0 +1,144 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 0;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.menu {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+* {
+  font-size: 16px;
+}
+
+table,
+th {
+  border: 0.5px solid rgba(231, 231, 231, 0.536);
+  border-collapse: collapse;
+}
+
+td {
+  border: 0.5px solid rgba(231, 231, 231, 0.536);
+}
+
+th {
+  text-align: left;
+}
+
+tr {
+  height: 3rem;
+}
+
+tr:hover {
+  background: rgba(233, 233, 233, 0.188);
+}
+
+tfoot {
+  td {
+    div {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      color: gray;
+      padding-right: 10px;
+    }
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+  padding-top: 4px;
+}
+
+.toggleMenu{
+  display: none;
+}
+
+.toggleClose{
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  * {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .toggleClose{
+    display: block;
+    top: 10;
+    position: absolute;
+    top: 5px;
+  }
+  
+  *{
+    font-size: 17px;
+  }
+  .main {
+    margin: 0;
+    padding: 1rem;
+    height: 100vh!important;
+  }
+
+  .menu {
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 1rem;
+  }
+
+  .container {
+
+    border-radius: 10px;
+  }
+
+  .select{
+
+  }
+
+  .footer{
+    bottom: 50px!important;
+  }
+
+  table,
+  th {
+    border: 0.5px solid rgba(231, 231, 231, 0.536);
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 0.5px solid rgba(231, 231, 231, 0.536);
+    height: 15px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tr {
+    height: 3rem;
+  }
+
+  tfoot {
+    td {
+      text-align: right;
+      color: gray;
+      padding-right: 10px;
+    }
+  }
+
+  
+}
